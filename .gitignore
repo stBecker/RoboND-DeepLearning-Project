@@ -2,7 +2,17 @@
 __pycache__/
 *.py[cod]
 *$py.class
-.idea/
+
+.idea
+
+data/validation
+data/train_combined
+data/sample_evaluation_data
+data/runs
+
+data/*zip
+
+RUNS/
 
 # C extensions
 *.so
@@ -100,6 +110,3 @@ ENV/
 
 # mypy
 .mypy_cache/
-
-RUNS/
-
