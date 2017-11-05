@@ -6,9 +6,11 @@ __pycache__/
 .idea
 
 data/validation
-data/train_combined
+data/train
 data/sample_evaluation_data
 data/runs
+data/processed_sim_data
+data/raw_sim_data
 
 data/*zip
 
