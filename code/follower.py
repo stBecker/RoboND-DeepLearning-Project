@@ -50,7 +50,7 @@ from tensorflow.contrib.keras.python import keras
 from utils import separable_conv2d
 
 from utils import data_iterator
-from utils import visualization
+# from utils import visualization
 from utils import scoring_utils
 from utils import sio_msgs
 from utils import model_tools
@@ -214,9 +214,10 @@ if __name__ == '__main__':
     model = model_tools.load_network(args.weight_file)
     image_hw = model.layers[0].output_shape[1]
 
-    if args.pred_viz: 
-        overlay_plot = visualization.SideBySidePlot('Segmentation Overlay', image_hw)
-        queue = overlay_plot.start()
+    if args.pred_viz:
+        queue = None
+        # overlay_plot = visualization.SideBySidePlot('Segmentation Overlay', image_hw)
+        # queue = overlay_plot.start()
     else:
         queue = None
 
