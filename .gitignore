@@ -13,6 +13,7 @@ data/processed_sim_data
 data/raw_sim_data
 
 data/*zip
+data/*7z
 
 RUNS/
 
